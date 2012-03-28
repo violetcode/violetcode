@@ -54,7 +54,12 @@ section.head p a {
 	font-weight: bold;
 }
 
-section.head img {
+section.head ul#social li{
+	display: inline;
+	margin-right: 5px;
+}
+
+section.head span img {
 	float: right;
 	margin-left: 20px;
 	-webkit-border-radius: 250px;

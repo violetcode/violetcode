@@ -54,12 +54,8 @@ section.head p a {
 	font-weight: bold;
 }
 
-section.head span {
-	text-align: center;
-	display: block;
-}
-
 section.head img {
+	float: right;
 	margin-left: 20px;
 	-webkit-border-radius: 250px;
 	width: 200px;

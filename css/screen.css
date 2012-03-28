@@ -2,11 +2,12 @@
 
 html,body {
 	background: url('/img/background');
+	font-family: 'ff-meta-web-pro', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: rue-display-web;
 	font-weight: normal;
+	font-family: 'ff-meta-web-pro', sans-serif;
 }
 
 h1 {
@@ -15,6 +16,9 @@ h1 {
 
 p {
 	margin: 1em 0;
+	font-family: 'ff-meta-web-pro', sans-serif;
+	font-size: 14px;
+	text-shadow: #FFF 2px 2px 1px;
 }
 
 a, a:visited {
@@ -34,22 +38,20 @@ a:hover {
 }
 
 section.head {
-	height: 250px;
-}
-
-section.head h2 {
-	padding-top: 30px;
+	height: 185px;
+	margin-left: -60px;
 }
 
 section.head p {
 	margin-top: 5px;
+	font-family: 'ff-meta-web-pro', sans-serif;
 }
 
 section.head img {
 	float: left;
 	margin-right: 20px;
-	border: 1px solid #333;
 	-webkit-border-radius: 250px;
+	width: 150px;
 }
 
 
@@ -66,6 +68,9 @@ ul.posts span {
 	color: #aaa;
 }
 
+ul#projects a {
+	font-weight: bold;
+}
 
 /* Site */
 
@@ -76,15 +81,16 @@ ul.posts span {
 }
 
 .title {
-	color: #;
-	font-weight: bold;
 	margin-bottom: 2em;
+	border-bottom: 1px solid #ddd;
 }
 
 .title h1 {
 	margin-right: 10px;
 	display: inline;
-	font-size: 20px;
+	font-size: 24px;
+	font-family: rue-display-web;
+	text-shadow: #cdcdcd 2px 2px 1px;
 }
 
 .site .title a {
@@ -97,7 +103,7 @@ ul.posts span {
 }
 
 .title .extra {
-	font: 14px "ff-tisa-web-pro", serif;
+	font-family: 'ff-meta-web-pro', sans-serif;
 	color: #aaa;
 }
 

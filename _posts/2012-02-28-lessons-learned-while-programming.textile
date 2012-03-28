@@ -1,0 +1,20 @@
+---
+layout: post
+title: Lessons Learned While Programming
+---
+
+After going through and rooting my MyTouch 3g Slide yesterday, and throughout my experience with coding, there is one thing that I have learned. Pay attention to the details.
+
+I can't even count the number of times I've gotten stuck working on a problem, unable to figure out where I went wrong, only to find out I was missing a curly brace or a semi-colon. Or something wasn't capitalized right. Silly little typos that make all the difference in the world, to the compiler at least.
+
+Rooting my Slide again taught me such a lesson. Though I'm only partly to blame. There is one thing that annoys me, when looking through sites that are supposed to be a tutorial for either programming or scripting or something that deals with the console. If you're giving example of code or of a command, please, please, PLEASE enclose it in some sort of "code" tag, or make it in a some sort of monospace font. It will make everyone's lives easier.
+
+Take my problems with rooting my Slide. I was following a guide that was very thorough. However, when it gave the commands that were issued through the console, it was in the same font as the rest of the article. Everything was going fine until I came up to a command where in the middle of it, I couldn't tell if there was supposed to be a space in between or not. 
+
+I squinted my eyes and looked in closer, comparing it to the other spaces around it. Nope. Still wasn't clear. It was exactly half of a usual space size. So I guessed. I tried it with no space in between. The command worked, so I moved on (I guess it was partially my fault, to just assume that if I was wrong, it would throw an error or something). Then I got to a step later on, and couldn't figure out why it kept saying "Update Failed."
+
+I spent around 2 hours trying to fix the update failure. I thought perhaps the .zip file I downloaded was corrupt. After a while, with no success, I finally resigned and decided to start over, with a different guide this time. This guide used a different monospace font for when it gave the commands. As I got to the part where I was unsure before, it struck me immediately. My entire problem, that had cost me 2 hours of work, was one little space!
+
+Executing the correct command, everything went fine. The process was smooth, but I was still very annoyed at myself, as well as with whoever wrote the first guide.
+
+Please, people, when dealing with technology, pay attention to the details! I've definitely learned my lesson; computers do EXACTLY what you tell them to, no more, and no less.

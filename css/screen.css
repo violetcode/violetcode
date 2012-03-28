@@ -1,0 +1,137 @@
+/* @override http://violetcode.github.com/css/screen.css */
+
+html,body {
+	background: url('/img/background.png');
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "ff-tisa-web-pro", serif;
+	font-weight: normal;
+}
+
+h1 {
+	margin-bottom: 1em;
+}
+
+p {
+	margin: 1em 0;
+}
+
+a, a:visited {
+	color: #2ca3bf;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+}
+
+/* Home */
+
+#home h2 {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+section.head {
+	height: 100px;
+}
+
+section.head p {
+	margin-top: 5px;
+}
+
+section.head img {
+	float: left;
+	margin-right: 20px;
+	border: 1px solid #000;
+}
+
+
+ul.posts {
+	margin: 10px 0 20px; 
+}
+
+ul.posts li {
+	line-height: 1.75em;
+	font-size: 90%;
+}
+
+ul.posts span {
+	color: #aaa;
+}
+
+
+/* Site */
+
+.site {
+	font-size: 110%;
+	width: 580px;
+	margin: 40px auto 2em auto;
+}
+
+.title {
+	color: #;
+	font-weight: bold;
+	margin-bottom: 2em;
+}
+
+.title h1 {
+	margin-right: 10px;
+	display: inline;
+	font-size: 14px;
+}
+
+.site .title a {
+	color: #000;
+	text-decoration: none;
+}
+
+.title a:hover {
+	color: #2ca3bf;
+}
+
+.title .extra {
+	font: 14px "ff-tisa-web-pro", serif;
+	color: #aaa;
+}
+
+.meta {
+	color: #aaa;
+}
+
+footer {
+	font-size: 90%;
+	color: #666;
+	border-top: 2px solid #eee;
+	margin-top: 2em;
+	padding-top: 10px;
+}
+
+
+/* Posts */
+
+#post ul,
+  #post ol {
+	margin-left: 1.35em;
+}
+
+/* terminal */
+
+#post pre.terminal {
+	border: 1px solid black;
+	background-color: #333;
+	color: white;
+}
+
+#post pre.terminal code {
+	background-color: #333;
+}
+
+#related {
+	margin-top: 2em;
+}
+
+#related h2 {
+	margin-bottom: 10px;
+}

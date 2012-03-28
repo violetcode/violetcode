@@ -1,0 +1,2 @@
+permalink: /writings/:title/
+exclude: ['README']

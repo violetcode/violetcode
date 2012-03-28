@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{{ page.title }}</title>
+<link href="feed/atom.xml" rel="alternate" title="violetco.de" type="application/atom+xml" />
+
+<link rel="profile" href="http://gmpg.org/xfn/11" /> 
+ 
+<!-- Favicons --> 
+<link rel="shortcut icon" href="/img/favicon.ico"/> 
+<link rel="apple-touch-icon" href="/img/iphone.png"/> 
+ 
+<!-- Meta --> 
+<meta charset="UTF-8" /> 
+<meta name="author" content="Marie VerMurlen" /> 
+<meta name="description" content="Something something something." /> 
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" media="screen" />	
+<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="/css/prettify.css" type="text/css" media="screen, projection" /> 
+
+<!-- Javascript --> 
+<script type="text/javascript" src="http://use.typekit.com/oab6bjn.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]--> 
+</head>
+
+<body onload="prettyPrint()">
+
+<div class="site">
+
+	<header class="title">
+		<h1><a href="/">Violetcode</a></h1>
+		<span class="extra">By Marie VerMurlen.</span>
+	</header>
+  
+	{{ content }}
+  
+	<footer>
+      <p>Copyright 2010&ndash;2012 <strong>Marie VerMurlen.</strong> All Rights Reserved.</p>
+	</footer>
+	
+</div>
+
+<a href="http://github.com/violetcode"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
+
+<script src="/js/prettify.js"></script>
+
+<!-- Twitter -->
+<script type="text/javascript"> 
+  twttr.anywhere(function (T) {
+    T(".site").hovercards();
+  });
+</script>
+
+<!-- Google Analytics -->
+<script>
+    var _gaq=[['_setAccount','UA-1247925-1'],['_trackPageview'],['_trackPageLoadTime']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script> 
+ 
+<!-- Google Analytics end -->
+
+</body>
+</html>

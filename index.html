@@ -1,0 +1,27 @@
+---
+layout: default
+title: Violetco.de
+---
+
+<div id="home">
+
+<section class="head">
+	<a href="http://twitter.com/violet_code" title="Home"><img src="/img/home.png" width='225' height="225" alt="Violetcode" /></a>
+    <h2>heading here.</h2>
+    <p id="tagline">Voluptate swag mumblecore laborum, mlkshk odio dolore. Elit seitan tofu you probably haven't heard of them gastropub voluptate. Truffaut aliqua nihil, gentrify eiusmod labore high life vegan exercitation commodo laborum. Fixie nisi delectus lo-fi, messenger bag photo booth tattooed wolf PBR aliquip biodiesel lomo godard cliche four loko. Ea letterpress sapiente umami, keytar quis sint nostrud pork belly magna. Cray marfa elit, yr odd future blog put a bird on it. Cray ad reprehenderit, thundercats trust fund exercitation fanny pack umami keffiyeh mustache fixie</p> 
+</section>
+
+  <h2>Writings</h2>
+  <ul class="posts unstyled" id="writings">
+    {% for post in site.posts %}
+      <li>&raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h2>Projects</h2>
+  <ul class="posts unstyled" id="projects">
+    <li><a href="#">CatFacts!</a> Get daily cat facts delivered to your phone!</li>
+    <li><a href="#">Google+ for Django</a> Django app that constructs a blog from your google posts.</li>
+    <li><a href="#">kinect project thingy</a> Senior project at Seattle University</li>
+  </ul>
+</div>

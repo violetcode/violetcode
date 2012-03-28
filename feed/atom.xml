@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>underlost labs</title>
+ <link href="http://underlost.github.com/feed/atom.xml" rel="self"/>
+ <link href="http://underlost.github.com/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://underlost.github.com/</id>
+ <author>
+   <name>Tyler Rilling</name>
+   <email>tyler@underlost.net</email>
+ </author>
+
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://underlost.github.com{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://tom.preston-werner.com{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+ 
+</feed>

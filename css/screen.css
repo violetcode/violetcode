@@ -1,11 +1,11 @@
 /* @override http://violetcode.github.com/css/screen.css */
 
 html,body {
-	background: url('/img/background.png');
+	background: url('/img/background');
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "ff-tisa-web-pro", serif;
+	font-family: rue-display-web;
 	font-weight: normal;
 }
 
@@ -18,7 +18,7 @@ p {
 }
 
 a, a:visited {
-	color: #2ca3bf;
+	color: #5E4270;
 	text-decoration: none;
 }
 
@@ -34,7 +34,11 @@ a:hover {
 }
 
 section.head {
-	height: 100px;
+	height: 250px;
+}
+
+section.head h2 {
+	padding-top: 30px;
 }
 
 section.head p {
@@ -44,7 +48,8 @@ section.head p {
 section.head img {
 	float: left;
 	margin-right: 20px;
-	border: 1px solid #000;
+	border: 1px solid #333;
+	-webkit-border-radius: 250px;
 }
 
 
@@ -79,16 +84,16 @@ ul.posts span {
 .title h1 {
 	margin-right: 10px;
 	display: inline;
-	font-size: 14px;
+	font-size: 20px;
 }
 
 .site .title a {
-	color: #000;
+	color: #5E4270;
 	text-decoration: none;
 }
 
 .title a:hover {
-	color: #2ca3bf;
+	color: #5E4270;
 }
 
 .title .extra {

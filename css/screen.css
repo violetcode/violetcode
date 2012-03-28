@@ -38,8 +38,7 @@ a:hover {
 }
 
 section.head {
-	height: 185px;
-	margin-left: -60px;
+	margin-bottom: 25px;
 }
 
 section.head p {
@@ -48,7 +47,7 @@ section.head p {
 }
 
 section.head img {
-	float: left;
+	float: right;
 	margin-right: 20px;
 	-webkit-border-radius: 250px;
 	width: 150px;

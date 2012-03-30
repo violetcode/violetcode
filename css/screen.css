@@ -8,6 +8,8 @@ html,body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 	font-family: "museo-slab",serif;
+	text-shadow: 0 1px 1px rgba(0,0,0,.5);
+
 }
 
 h1 {
@@ -18,7 +20,6 @@ p {
 	margin: 1em 0;
 	font-family: "museo-sans",sans-serif;
 	font-size: 14px;
-	text-shadow: #FFF 2px 2px 1px;
 }
 
 a, a:visited {

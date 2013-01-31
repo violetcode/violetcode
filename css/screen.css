@@ -76,7 +76,7 @@ ul.posts span {
 	color: #aaa;
 }
 
-ul#projects a {
+ul.projects a {
 	font-weight: bold;
 	font-family: "museo-slab",serif;
 }

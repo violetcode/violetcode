@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>UnderTasker Test Suite</title>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery.min.js"></script>
+
+    <!-- QUnit -->
+    <link rel="stylesheet" href="vendor/qunit.css" media="screen">
+    <script src="vendor/qunit.js"></script>
+    <script>
+      // See https://github.com/axemclion/grunt-saucelabs#test-result-details-with-qunit
+      var log = []
+      QUnit.done(function (testResults) {
+        var tests = []
+        for (var i = 0, len = log.length; i < len; i++) {
+          var details = log[i]
+          tests.push({
+            name: details.name,
+            result: details.result,
+            expected: details.expected,
+            actual: details.actual,
+            source: details.source
+          })
+        }
+        testResults.tests = tests
+
+        window.global_test_results = testResults
+      })
+
+      QUnit.testStart(function (testDetails) {
+        QUnit.log = function (details) {
+          if (!details.result) {
+            details.name = testDetails.name
+            log.push(details)
+          }
+        }
+      })
+
+      // Cleanup
+      QUnit.testDone(function () {
+        $('#qunit-fixture').empty()
+      })
+    </script>
+
+    <!-- Plugin sources -->
+    <script>$.support.transition = false</script>
+    <script src="../../js/app.js"></script>
+
+    <!-- Unit tests -->
+    <script src="unit/app.js"></script>
+
+  </head>
+  <body>
+    <div id="qunit-container">
+      <div id="qunit"></div>
+      <div id="qunit-fixture"></div>
+    </div>
+  </body>
+</html>

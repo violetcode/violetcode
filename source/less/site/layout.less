@@ -65,9 +65,7 @@
 }
 
 .header {
-    width: 50%;
-    margin: 0 auto;
-
+    padding-top: 50px;
     .title {
         font-size: 100px;
         line-height: .95;
@@ -81,45 +79,28 @@
         letter-spacing: 0.01em;
         margin-top: 0;
         margin-bottom: 0;
-        padding-left: 50px;
+        padding-left: 25px;
         color: #d1cdbf;
     }
 }
 
-.carosel {
-    .circle {
-        width: 150px;
-        height: 150px;
-        -moz-border-radius: 25%; 
-        -webkit-border-radius: 25%; 
-        border-radius: 25%;
-        background: rgba(0,0,0,0.3);
+#slideshow { 
+    margin: 50px auto; 
+    width: 150px; 
+    height: 150px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+    -moz-border-radius: 25%; 
+    -webkit-border-radius: 25%; 
+    border-radius: 25%;
+    background: rgba(0,0,0,0.3);
 
-        .inner {
-            text-align: center;
-            vertical-align: middle;
-            display: table-cell;
-            font-weight: 500;
-            text-transform: uppercase;
-        }
-    }
-}
-
-
-
-
-.tagline {
-    font-size: 60px;
-    line-height: .95;
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    margin-bottom: 20px;
-    margin-top: 8px;
-
-    .line {
-        display: block;
-
-        a {color: #f2f2f2;}
-        a:hover {text-decoration: none;}
+    .contents {
+        position: absolute;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 25px;
+        font-weight: 500;
+        text-transform: uppercase;
     }
 }

@@ -3017,8 +3017,7 @@ address
 }
 .header
 {
-    width: 50%;
-    margin: 0 auto;
+    padding-top: 50px;
 }
 .header .title
 {
@@ -3037,52 +3036,35 @@ address
 
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 50px;
+    padding-left: 25px;
 
     letter-spacing: .01em;
 
     color: #d1cdbf;
 }
-.carosel .circle
+#slideshow
 {
     width: 150px;
     height: 150px;
+    margin: 50px auto;
 
     border-radius: 25%;
     background: rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+            box-shadow: 0 0 20px rgba(0, 0, 0, .4);
 }
-.carosel .circle .inner
+#slideshow .contents
 {
     font-weight: 500;
 
-    display: table-cell;
+    position: absolute;
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 25px;
 
     text-align: center;
-    vertical-align: middle;
     text-transform: uppercase;
-}
-.tagline
-{
-    font-size: 60px;
-    font-weight: 700;
-    line-height: .95;
-
-    margin-top: 8px;
-    margin-bottom: 20px;
-
-    letter-spacing: -.03em;
-}
-.tagline .line
-{
-    display: block;
-}
-.tagline .line a
-{
-    color: #f2f2f2;
-}
-.tagline .line a:hover
-{
-    text-decoration: none;
 }
 @media (max-width: 800px)
 {

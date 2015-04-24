@@ -3001,6 +3001,12 @@ body
 
     color: #d3d3d3;
 }
+.code
+{
+    font-family: monospace;
+
+    padding-left: 10px;
+}
 .blurb
 {
     margin-top: 50px;
@@ -3023,12 +3029,12 @@ body
     text-decoration: none;
 
     color: #fff;
-    border-radius: 25px;
-    background-color: rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    background-color: #333;
 }
 .contact a:hover
 {
-    background-color: rgba(0, 0, 0, .2);
+    background-color: #4a4a4a;
 }
 @media (max-width: 800px)
 {

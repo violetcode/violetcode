@@ -2937,13 +2937,6 @@ body
 {
     font-family: 'proxima-nova', Helvetica, sans-serif;
 
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
     text-align: center;
 
     color: #fff;
@@ -2990,16 +2983,12 @@ body
 
     margin-top: 0;
     margin-bottom: 0;
-
-    color: #d3d3d3;
 }
 .header h3
 {
     font-size: 20px;
 
     margin-top: 0;
-
-    color: #d3d3d3;
 }
 .code
 {
@@ -3009,6 +2998,7 @@ body
 }
 .blurb
 {
+    margin: auto auto;
     margin-top: 50px;
 
     text-align: center;
@@ -3030,7 +3020,22 @@ body
 
     color: #fff;
     border-radius: 5px;
-    background-color: #333;
+    background: #45484d;
+  /* Old browsers */
+  /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #45484d), color-stop(100%, #000));
+  /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #45484d 0%, #000 100%);
+  /* Chrome10+,Safari5.1+ */
+    background:      -o-linear-gradient(top, #45484d 0%, #000 100%);
+  /* Opera 11.10+ */
+  /* IE10+ */
+    background: -webkit-gradient(linear, left top, left bottom, from(#45484d), to(#000));
+    background:         linear-gradient(to bottom, #45484d 0%, #000 100%);
+
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#45484d', endColorstr='#000000', GradientType=0);
+  /* IE6-9 */
 }
 .contact a:hover
 {
@@ -3038,28 +3043,40 @@ body
 }
 @media (max-width: 800px)
 {
-    .preamble
+    .header .title
     {
-        font-size: 12px;
+        font-size: 75px;
+        font-weight: 500;
+        line-height: .95;
+
+        letter-spacing: .03em;
     }
-    .tagline
+    .header h2
     {
-        font-size: 45px;
+        font-size: 20px;
+    }
+    .header h3
+    {
+        font-size: 15px;
     }
 }
 @media (max-width: 400px)
 {
-    .wrapper-inner
+    .header .title
     {
-        margin-top: 8%;
+        font-size: 50px;
+        font-weight: 500;
+        line-height: .95;
+
+        letter-spacing: .03em;
     }
-    .preamble
+    .header h2
     {
-        font-size: 11px;
+        font-size: 12px;
     }
-    .tagline
+    .header h3
     {
-        font-size: 32px;
+        font-size: 10px;
     }
 }
 /*# sourceMappingURL=violetcode.css.map */

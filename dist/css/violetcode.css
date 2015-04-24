@@ -2933,7 +2933,7 @@ address
 {
     content: '\f1e2';
 }
-.wrapper
+body
 {
     font-family: 'proxima-nova', Helvetica, sans-serif;
 
@@ -2951,37 +2951,10 @@ address
 
     text-rendering: optimizeLegibility;
 }
-.wrapper:before
-{
-    display: inline-block;
-
-    margin-right: -.25em;
-
-    content: '';
-}
-.wrapper:after
-{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    content: '';
-}
-.wrapper-inner
-{
-    position: relative;
-    z-index: 2;
-
-    display: inline-block;
-
-    margin-top: 5%;
-}
 #background-wrapper
 {
     position: absolute;
-    z-index: 2;
+    z-index: -22;
     top: 0;
     left: 0;
 
@@ -2997,6 +2970,8 @@ address
 }
 .header
 {
+    margin-top: 5%;
+
     text-align: center;
 }
 .header .title
@@ -3009,13 +2984,53 @@ address
 
     letter-spacing: .03em;
 }
+.header h2
+{
+    font-size: 25px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: #d3d3d3;
+}
+.header h3
+{
+    font-size: 20px;
+
+    margin-top: 0;
+
+    color: #d3d3d3;
+}
 .blurb
 {
+    margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
 
     text-align: center;
     text-transform: uppercase;
+}
+.contact
+{
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+    color: #fff;
+}
+.contact a
+{
+    padding: 15px;
+
+    text-decoration: none;
+
+    color: #fff;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, .3);
+}
+.contact a:hover
+{
+    background-color: rgba(0, 0, 0, .2);
 }
 @media (max-width: 800px)
 {

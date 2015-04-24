@@ -1,4 +1,4 @@
-.wrapper {
+body {
     position: fixed;
     z-index: 10;
     top: 0;
@@ -12,25 +12,6 @@
     font-family: "proxima-nova", Helvetica, sans-serif;
 
 }
-.wrapper:before {
-    content: '';
-    display: inline-block;
-    margin-right: -0.25em;
-}
-.wrapper:after {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-.wrapper-inner {
-    position: relative;
-    display: inline-block;
-    z-index: 2;
-    margin-top: 5%;
-}
 
 #background-wrapper {
     top:0;
@@ -39,7 +20,7 @@
     height:100%;
     overflow:hidden;
     position:absolute;
-    z-index: 2;
+    z-index: -22;
     background: #1a1a1a url('../img/sparkler.jpg') center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,6 +28,7 @@
 }
 
 .header {
+    margin-top: 5%;
     text-align: center;
     .title {
         font-size: 100px;
@@ -55,11 +37,42 @@
         letter-spacing: 0.03em;
         margin-bottom: 0;
     }
+    h2 {
+        font-size: 25px;
+        color: #d3d3d3;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    h3 {
+        font-size: 20px;
+        margin-top: 0;
+        color: #d3d3d3;
+    }
 }
 
 .blurb {
+    margin-top: 50px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     text-transform: uppercase;
+}
+
+.contact {
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    a {
+        padding: 15px;
+        color: #fff;
+        text-decoration: none;
+        background-color: rgba(0,0,0,0.3);
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+    }
+    a:hover {
+        background-color: rgba(0,0,0,0.2);
+    }
 }

@@ -2995,22 +2995,6 @@ address
     -webkit-background-size: cover;
             background-size: cover;
 }
-#background
-{
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-
-    width: 3000px;
-    height: 3000px;
-}
-#background svg
-{
-    display: block;
-
-    margin: -50% 0 0 -50%;
-}
 .header
 {
     text-align: center;

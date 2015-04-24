@@ -8,6 +8,7 @@
     text-shadow: 0 1px 1px rgba(0,0,0,.4);
     color: #fff;
     text-rendering: optimizeLegibility;
+    text-align: center;
     font-family: "proxima-nova", Helvetica, sans-serif;
 
 }
@@ -15,7 +16,6 @@
     content: '';
     display: inline-block;
     height: 100%;
-    vertical-align: middle;
     margin-right: -0.25em;
 }
 .wrapper:after {
@@ -29,11 +29,8 @@
 .wrapper-inner {
     position: relative;
     display: inline-block;
-    vertical-align: middle;
     z-index: 2;
     margin-top: 5%;
-    max-width: 75%;
-    left: 12%;
 }
 
 #background-wrapper {
@@ -65,7 +62,7 @@
 }
 
 .header {
-    padding-top: 50px;
+    text-align: center;
     .title {
         font-size: 100px;
         line-height: .95;
@@ -73,34 +70,11 @@
         letter-spacing: 0.03em;
         margin-bottom: 0;
     }
-    .subhead {
-        font-size: 20px;
-        line-height: 1;
-        letter-spacing: 0.01em;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-left: 25px;
-        color: #d1cdbf;
-    }
 }
 
-#slideshow { 
-    margin: 50px auto; 
-    width: 150px; 
-    height: 150px; 
-    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
-    -moz-border-radius: 25%; 
-    -webkit-border-radius: 25%; 
-    border-radius: 25%;
-    background: rgba(0,0,0,0.3);
-
-    .contents {
-        position: absolute;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 25px;
-        font-weight: 500;
-        text-transform: uppercase;
-    }
+.blurb {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
 }

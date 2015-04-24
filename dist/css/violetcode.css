@@ -2944,6 +2944,8 @@ address
     bottom: 0;
     left: 0;
 
+    text-align: center;
+
     color: #fff;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
 
@@ -2957,7 +2959,6 @@ address
     margin-right: -.25em;
 
     content: '';
-    vertical-align: middle;
 }
 .wrapper:after
 {
@@ -2973,14 +2974,10 @@ address
 {
     position: relative;
     z-index: 2;
-    left: 12%;
 
     display: inline-block;
 
-    max-width: 75%;
     margin-top: 5%;
-
-    vertical-align: middle;
 }
 #background-wrapper
 {
@@ -3017,7 +3014,7 @@ address
 }
 .header
 {
-    padding-top: 50px;
+    text-align: center;
 }
 .header .title
 {
@@ -3029,39 +3026,10 @@ address
 
     letter-spacing: .03em;
 }
-.header .subhead
+.blurb
 {
-    font-size: 20px;
-    line-height: 1;
-
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 25px;
-
-    letter-spacing: .01em;
-
-    color: #d1cdbf;
-}
-#slideshow
-{
-    width: 150px;
-    height: 150px;
-    margin: 50px auto;
-
-    border-radius: 25%;
-    background: rgba(0, 0, 0, .3);
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .4);
-            box-shadow: 0 0 20px rgba(0, 0, 0, .4);
-}
-#slideshow .contents
-{
-    font-weight: 500;
-
-    position: absolute;
-
     margin-right: auto;
     margin-left: auto;
-    padding-top: 25px;
 
     text-align: center;
     text-transform: uppercase;

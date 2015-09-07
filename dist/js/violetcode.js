@@ -4,6 +4,3 @@
 
 if (typeof jQuery === 'undefined') { throw new Error('UnderTasker\'s JavaScript requires jQuery') }
 
-/*!
- * Put things here.
- */

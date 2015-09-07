@@ -11,7 +11,6 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link href="dist/css/violetcode.min.css" rel="stylesheet">
-	<link href="dist/css/animate.css" rel="stylesheet">
 
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -22,6 +21,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript" src="dist/js/violetcode.min.js"></script>
+	
 
 
 	<script type="text/javascript" src="//use.typekit.net/qvg2llb.js"></script>
@@ -43,12 +43,16 @@
 </head>
 
 <body>
-
-	<div class="container">
+	<div id="particles-js"></div>
+	<div class="container-fluid">
 		{{ content }}
 	</div>
-
+	<div id="background-picture"></div>
+	
 	<div id="background-wrapper"></div>
+	
 
+	<script type="text/javascript" src="dist/js/particles.min.js"></script>
+	<script type="text/javascript" src="dist/js/app.js"></script>
 </body>
 </html>

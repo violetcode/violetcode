@@ -51,5 +51,8 @@
   "bugs": {
     "url": "https://github.com/violetcode/violetcode/issues"
   },
-  "homepage": "http://violetco.de"
+  "homepage": "http://violetco.de",
+  "devDependencies": {
+    "grunt": "~0.4.5"
+  }
 }

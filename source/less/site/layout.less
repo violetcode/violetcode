@@ -1,8 +1,11 @@
+html, body, .container, .container-fluid {
+    height: 100%;
+}
+
 body {
     text-shadow: 0 1px 1px rgba(0,0,0,.4);
-    color: #fff;
+    color: @beige;
     text-rendering: optimizeLegibility;
-    text-align: center;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -14,55 +17,91 @@ body {
     overflow:hidden;
     position:absolute;
     z-index: -22;
-    background: #1a1a1a url('../img/sparkler.jpg') center center fixed;
+    background: #000;
+}
+
+#background-picture {
+    bottom: 0;
+    right: 0;
+    width:500px;
+    height:568px;
+    position:fixed;
+    background: url('../img/background_small.png');
     background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.relative {
+    position: relative;
+}
+
+.main-nav {
+    position: fixed;
+    display: table;
+    height: 100%;
+    border-left: 1px solid rgba(255,255,255,.15);
+}
+
+.nav {
+    display: table-cell;
+    vertical-align: middle;
+
+    li {
+        margin-left: 15px;
+    }
+
+    li a {
+        text-decoration: none;
+        font-size: 24px;
+        color: @blue;
+
+    }
+
+    li a:hover {
+        color: @green;
+        background: none;
+    }
+}
+
+h2{
+    color: @green;
 
 }
 
-.header {
-    margin-top: 15%;
-    text-align: center;
+.main-content {
+    margin-top: 200px;
+    text-align: right;
+
+    article {
+        margin-top: 100px;
+    }
+}
+
+header{
+    font-size: 24px;
     .title {
-        font-size: 100px;
-        line-height: .95;
+        font-size: 60px;
         font-weight: 400;
+        line-height: .95;
         margin-bottom: 0;
-    }
-    h2 {
-        font-size: 25px;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    h3 {
-        font-size: 20px;
-        margin-top: 0;
+        color: @green;
     }
 }
 
 .code {
-    font-family: "Cutive Mono", monospace;
+    font-family: 'Cutive Mono',monospace;
     padding-left: 10px;
     letter-spacing: -3px;
+    color: darken(@green, 25%);
 }
 
-.blurb {
-    margin-top: 50px;
-    text-align: center;
-    text-transform: uppercase;
+article h4 {
+    font-size: 22px;
+    color: @gray-light;
 }
 
-.contact {
-    color: #fff;
-    margin-top: 50px;
-    font-size: 25px;
-    a {
-        padding: 15px;
-        color: #fff;
-        text-decoration: none;       
-    }
-    a:hover {
-        background-color: rgba(0,0,0,0.3);
-        border-radius: 5px;
-    }
+#particles-js {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }

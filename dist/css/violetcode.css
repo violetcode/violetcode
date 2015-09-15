@@ -10568,21 +10568,27 @@ button.close
 {
     content: '\f1e2';
 }
+#content,
+#wrapper,
 html,
-body,
-.container,
-.container-fluid
-{
-    height: 100%;
-}
 body
 {
     font-family: 'Open Sans', sans-serif;
+
+    height: 100%;
 
     color: #dad6ca;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
 
     text-rendering: optimizeLegibility;
+}
+#content
+{
+    float: left;
+
+    width: 50%;
+
+    text-align: right;
 }
 #background-wrapper
 {
@@ -10610,29 +10616,18 @@ body
     background: url('../img/background_small.png');
     background-repeat: no-repeat;
 }
-.relative
+.nav-area
 {
     position: relative;
-}
-.main-nav
-{
-    position: fixed;
 
     display: table;
 
+    width: 27%;
     height: 100%;
-
-    border-left: 1px solid rgba(255, 255, 255, .15);
-}
-.nav
-{
-    display: table-cell;
-
-    vertical-align: middle;
 }
 .nav li
 {
-    margin-left: 15px;
+    margin-left: 5px;
 }
 .nav li a
 {
@@ -10651,15 +10646,68 @@ h2
 {
     color: #6bda4d;
 }
-.main-content
+.content-section
 {
-    margin-top: 200px;
+    position: relative;
+    z-index: 50;
 
-    text-align: right;
+    display: table;
+
+    width: 100%;
+    height: 100%;
+
+    border-right: 1px solid rgba(255, 255, 255, .15);
 }
-.main-content article
+.content-section .content-panel
 {
-    margin-top: 100px;
+    padding: 25px 0;
+
+    background: rgba(9, 52, 78, .3);
+}
+.content-section .top-content
+{
+    height: 40px;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+  /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(9, 52, 78, .3)));
+  /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(9, 52, 78, .3) 100%);
+  /* Chrome10+,Safari5.1+ */
+    background:      -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(9, 52, 78, .3) 100%);
+  /* Opera 11.10+ */
+  /* IE10+ */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(9, 52, 78, .3)));
+    background:         linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(9, 52, 78, .3) 100%);
+  /* W3C */
+}
+.content-section .bottom-content
+{
+    height: 40px;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0.65+0,0+100;Neutral+Density */
+  /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(9, 52, 78, .3)), color-stop(100%, rgba(0, 0, 0, 0)));
+  /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(9, 52, 78, .3) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+    background:      -o-linear-gradient(top, rgba(9, 52, 78, .3) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Opera 11.10+ */
+  /* IE10+ */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(9, 52, 78, .3)), to(rgba(0, 0, 0, 0)));
+    background:         linear-gradient(to bottom, rgba(9, 52, 78, .3) 0%, rgba(0, 0, 0, 0) 100%);
+  /* W3C */
+}
+.layout-single-column
+{
+    max-width: 640px;
+    margin: 0 auto;
+}
+.vertical
+{
+    display: table-cell;
+
+    vertical-align: middle;
 }
 header
 {
@@ -10690,6 +10738,10 @@ article h4
     font-size: 22px;
 
     color: #777;
+}
+#main-article
+{
+    margin-top: 100px;
 }
 #particles-js
 {

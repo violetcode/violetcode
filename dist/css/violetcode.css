@@ -10568,41 +10568,27 @@ button.close
 {
     content: '\f1e2';
 }
-#content,
-#wrapper,
 html,
 body
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'freight-sans-pro', sans-serif;
+    font-size: 18px;
 
     height: 100%;
 
     color: #dad6ca;
+    background: #000;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
 
     text-rendering: optimizeLegibility;
 }
-#content
+#wrapper
 {
-    float: left;
+    position: relative;
+    z-index: 50;
 
-    width: 50%;
-
-    text-align: right;
-}
-#background-wrapper
-{
-    position: absolute;
-    z-index: -22;
-    top: 0;
-    left: 0;
-
-    overflow: hidden;
-
-    width: 100%;
-    height: 100%;
-
-    background: #000;
+    width: 600px;
+    margin: 0 auto;
 }
 #background-picture
 {
@@ -10616,36 +10602,6 @@ body
     background: url('../img/background_small.png');
     background-repeat: no-repeat;
 }
-.nav-area
-{
-    position: relative;
-
-    display: table;
-
-    width: 27%;
-    height: 100%;
-}
-.nav li
-{
-    margin-left: 5px;
-}
-.nav li a
-{
-    font-size: 24px;
-
-    text-decoration: none;
-
-    color: #008d95;
-}
-.nav li a:hover
-{
-    color: #6bda4d;
-    background: none;
-}
-h2
-{
-    color: #6bda4d;
-}
 .content-section
 {
     position: relative;
@@ -10656,13 +10612,13 @@ h2
     width: 100%;
     height: 100%;
 
-    border-right: 1px solid rgba(255, 255, 255, .15);
+    border-right: 1px solid rgba(255, 255, 255, .2);
 }
 .content-section .content-panel
 {
     padding: 25px 0;
 
-    background: rgba(9, 52, 78, .3);
+    background: rgba(9, 52, 78, .4);
 }
 .content-section .top-content
 {
@@ -10670,15 +10626,15 @@ h2
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
   /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(9, 52, 78, .3)));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(9, 52, 78, .4)));
   /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(9, 52, 78, .3) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(9, 52, 78, .4) 100%);
   /* Chrome10+,Safari5.1+ */
-    background:      -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(9, 52, 78, .3) 100%);
+    background:      -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(9, 52, 78, .4) 100%);
   /* Opera 11.10+ */
   /* IE10+ */
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(9, 52, 78, .3)));
-    background:         linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(9, 52, 78, .3) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(9, 52, 78, .4)));
+    background:         linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(9, 52, 78, .4) 100%);
   /* W3C */
 }
 .content-section .bottom-content
@@ -10687,51 +10643,124 @@ h2
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0.65+0,0+100;Neutral+Density */
   /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(9, 52, 78, .3)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(9, 52, 78, .4)), color-stop(100%, rgba(0, 0, 0, 0)));
   /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(9, 52, 78, .3) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(top, rgba(9, 52, 78, .4) 0%, rgba(0, 0, 0, 0) 100%);
   /* Chrome10+,Safari5.1+ */
-    background:      -o-linear-gradient(top, rgba(9, 52, 78, .3) 0%, rgba(0, 0, 0, 0) 100%);
+    background:      -o-linear-gradient(top, rgba(9, 52, 78, .4) 0%, rgba(0, 0, 0, 0) 100%);
   /* Opera 11.10+ */
   /* IE10+ */
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(9, 52, 78, .3)), to(rgba(0, 0, 0, 0)));
-    background:         linear-gradient(to bottom, rgba(9, 52, 78, .3) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(9, 52, 78, .4)), to(rgba(0, 0, 0, 0)));
+    background:         linear-gradient(to bottom, rgba(9, 52, 78, .4) 0%, rgba(0, 0, 0, 0) 100%);
   /* W3C */
 }
-.layout-single-column
+a
 {
-    max-width: 640px;
-    margin: 0 auto;
-}
-.vertical
-{
-    display: table-cell;
-
-    vertical-align: middle;
-}
-header
-{
-    font-size: 24px;
-}
-header .title
-{
-    font-size: 60px;
-    font-weight: 400;
-    line-height: .95;
-
-    margin-bottom: 0;
+    text-decoration: none;
 
     color: #6bda4d;
 }
-.code
+a:hover
 {
-    font-family: 'Cutive Mono', monospace;
+    text-decoration: none;
 
-    padding-left: 10px;
+    color: #008d95;
+}
+nav ul li:before
+{
+    padding: 5px;
 
-    letter-spacing: -3px;
+    content: '/ ';
+}
+nav ul li:first-child:before
+{
+    padding: 0;
 
-    color: #348b1d;
+    content: '';
+}
+header
+{
+    font-size: 22px;
+
+    margin: 40px 0;
+
+    text-transform: uppercase;
+
+    color: #777;
+}
+header nav ul li
+{
+    padding: 5px;
+}
+header nav ul li span:hover
+{
+    cursor: pointer;
+
+    color: #dad6ca;
+}
+header nav ul li span.active
+{
+    color: #6bda4d;
+}
+#content
+{
+    position: relative;
+    z-index: 10;
+}
+#profile-img
+{
+    margin: 25px 0;
+}
+.site-footer
+{
+    position: fixed;
+    bottom: 0;
+
+    width: 60%;
+    padding: 15px 0;
+
+    text-align: right;
+}
+.site-footer .copyright
+{
+    padding-right: 15px;
+
+    opacity: .35;
+}
+h1.title
+{
+    font-size: 28px;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+h2.secondary-title
+{
+    font-size: 24px;
+}
+#title-block
+{
+    margin: 50px 0 10px;
+}
+.social-area li
+{
+    padding: 5px;
+}
+.social-area li a
+{
+    text-decoration: none;
+
+    color: #777;
+}
+.social-area li a:hover
+{
+    text-decoration: none;
+
+    color: #dad6ca;
+}
+p
+{
+    padding-bottom: 10px;
 }
 article h4
 {
@@ -10739,13 +10768,21 @@ article h4
 
     color: #777;
 }
-#main-article
+#projects article
 {
-    margin-top: 100px;
+    border-top: 1px solid rgba(255, 255, 255, .25);
+}
+#projects article img
+{
+    margin-bottom: 25px;
 }
 #particles-js
 {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
     overflow: hidden;
 

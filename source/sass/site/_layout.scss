@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5, h6, p {
     border: 2px solid $slate-grey;
     border-radius: 50%;
     box-shadow: 0 0 10px $slate-grey;
+    transition: 0.3s ease all;
     .dot {
       position: absolute;
       top: 50%;
@@ -105,6 +106,10 @@ h1, h2, h3, h4, h5, h6, p {
               0 0 100px $orchid,
               0 0 0 5px rgba(204, 220, 221, 0.1);
     }
+    &:hover {
+      box-shadow: 0 0 20px $orchid,
+                  0 0 0 5px rgba(204,220,221,.1);
+    }
   }
 
   .ring2 {
@@ -122,6 +127,10 @@ h1, h2, h3, h4, h5, h6, p {
               0 0 80px $blue,
               0 0 100px $blue,
               0 0 0 5px rgba(204, 220, 221, 0.1);
+    }
+    &:hover {
+      box-shadow: 0 0 20px $blue,
+                  0 0 0 5px rgba(204,220,221,.1);
     }
   }
 
@@ -141,6 +150,10 @@ h1, h2, h3, h4, h5, h6, p {
               0 0 100px $mint,
               0 0 0 5px rgba(204, 220, 221, 0.1);
     }
+    &:hover {
+      box-shadow: 0 0 20px $mint,
+                  0 0 0 5px rgba(204,220,221,.1);
+    }
   }
 
   .ring4 {
@@ -158,6 +171,10 @@ h1, h2, h3, h4, h5, h6, p {
               0 0 80px $purple,
               0 0 100px $purple,
               0 0 0 5px rgba(204, 220, 221, 0.1);
+    }
+    &:hover {
+      box-shadow: 0 0 20px $purple,
+                  0 0 0 5px rgba(204,220,221,.1);
     }
   }
 

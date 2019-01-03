@@ -12308,7 +12308,9 @@ h1, h2, h3, h4, h5, h6, p {
     border: 2px solid #707575;
     border-radius: 50%;
     -webkit-box-shadow: 0 0 10px #707575;
-    box-shadow: 0 0 10px #707575; }
+    box-shadow: 0 0 10px #707575;
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3s ease all; }
     .rings-wrapper .ring .dot {
       position: absolute;
       top: 50%;
@@ -12340,6 +12342,9 @@ h1, h2, h3, h4, h5, h6, p {
       background: #ca3cff;
       -webkit-box-shadow: 0 0 20px #ca3cff, 0 0 40px #ca3cff, 0 0 60px #ca3cff, 0 0 80px #ca3cff, 0 0 100px #ca3cff, 0 0 0 5px rgba(204, 220, 221, 0.1);
       box-shadow: 0 0 20px #ca3cff, 0 0 40px #ca3cff, 0 0 60px #ca3cff, 0 0 80px #ca3cff, 0 0 100px #ca3cff, 0 0 0 5px rgba(204, 220, 221, 0.1); }
+    .rings-wrapper .ring1:hover {
+      -webkit-box-shadow: 0 0 20px #ca3cff, 0 0 0 5px rgba(204, 220, 221, 0.1);
+      box-shadow: 0 0 20px #ca3cff, 0 0 0 5px rgba(204, 220, 221, 0.1); }
   .rings-wrapper .ring2 {
     top: 15px;
     left: 15px;
@@ -12352,6 +12357,9 @@ h1, h2, h3, h4, h5, h6, p {
       background: #c9e4e7;
       -webkit-box-shadow: 0 0 20px #c9e4e7, 0 0 40px #c9e4e7, 0 0 60px #c9e4e7, 0 0 80px #c9e4e7, 0 0 100px #c9e4e7, 0 0 0 5px rgba(204, 220, 221, 0.1);
       box-shadow: 0 0 20px #c9e4e7, 0 0 40px #c9e4e7, 0 0 60px #c9e4e7, 0 0 80px #c9e4e7, 0 0 100px #c9e4e7, 0 0 0 5px rgba(204, 220, 221, 0.1); }
+    .rings-wrapper .ring2:hover {
+      -webkit-box-shadow: 0 0 20px #c9e4e7, 0 0 0 5px rgba(204, 220, 221, 0.1);
+      box-shadow: 0 0 20px #c9e4e7, 0 0 0 5px rgba(204, 220, 221, 0.1); }
   .rings-wrapper .ring3 {
     top: 45px;
     left: 45px;
@@ -12364,6 +12372,9 @@ h1, h2, h3, h4, h5, h6, p {
       background: #c9ffd0;
       -webkit-box-shadow: 0 0 20px #c9ffd0, 0 0 40px #c9ffd0, 0 0 60px #c9ffd0, 0 0 80px #c9ffd0, 0 0 100px #c9ffd0, 0 0 0 5px rgba(204, 220, 221, 0.1);
       box-shadow: 0 0 20px #c9ffd0, 0 0 40px #c9ffd0, 0 0 60px #c9ffd0, 0 0 80px #c9ffd0, 0 0 100px #c9ffd0, 0 0 0 5px rgba(204, 220, 221, 0.1); }
+    .rings-wrapper .ring3:hover {
+      -webkit-box-shadow: 0 0 20px #c9ffd0, 0 0 0 5px rgba(204, 220, 221, 0.1);
+      box-shadow: 0 0 20px #c9ffd0, 0 0 0 5px rgba(204, 220, 221, 0.1); }
   .rings-wrapper .ring4 {
     top: 83px;
     left: 83px;
@@ -12376,6 +12387,9 @@ h1, h2, h3, h4, h5, h6, p {
       background: #b5a1e6;
       -webkit-box-shadow: 0 0 20px #b5a1e6, 0 0 40px #b5a1e6, 0 0 60px #b5a1e6, 0 0 80px #b5a1e6, 0 0 100px #b5a1e6, 0 0 0 5px rgba(204, 220, 221, 0.1);
       box-shadow: 0 0 20px #b5a1e6, 0 0 40px #b5a1e6, 0 0 60px #b5a1e6, 0 0 80px #b5a1e6, 0 0 100px #b5a1e6, 0 0 0 5px rgba(204, 220, 221, 0.1); }
+    .rings-wrapper .ring4:hover {
+      -webkit-box-shadow: 0 0 20px #b5a1e6, 0 0 0 5px rgba(204, 220, 221, 0.1);
+      box-shadow: 0 0 20px #b5a1e6, 0 0 0 5px rgba(204, 220, 221, 0.1); }
   .rings-wrapper .box {
     position: absolute;
     border: 1px solid #5a5a5a;

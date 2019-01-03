@@ -149,7 +149,7 @@ gulp.task('github-deploy', function () {
     del(['./.publish/.git']); // Clear the repo before we try pushing.
     return gulp.src('./.publish/**/*')
     .pipe($.ghPages({
-        remoteUrl: 'https://github.com/underlost/UnderTasker.git',
+        remoteUrl: 'https://github.com/violetcode/violetcode.git',
         branch: 'gh-pages'
     }));
 });
@@ -192,7 +192,7 @@ gulp.task('github', function(callback) {
 gulp.task('deploy', function() {
     return gulp.src('./source/**/*')
     .pipe(git({
-        repository: 'https://github.com/underlost/UnderTasker.git',
+        repository: 'https://github.com/violetcode/violetcode.git',
         branches:   ['gh-pages'],
         message: 'Deployed with UnderTasker.'
     }));

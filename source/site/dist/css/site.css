@@ -12408,7 +12408,7 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 30px;
     background-color: rgba(31, 16, 20, 0.8); }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .title {
     top: 30%; }
   .rings-wrapper {

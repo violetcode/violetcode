@@ -1,0 +1,21 @@
+//font-awesome
+$fa-font-path: "../fonts" !default;
+
+$grey: #ccdcdd;
+$slate-grey: #707575;
+
+$mint: #c9ffd0;
+$blue: #c9e4e7;
+$purple: #b5a1e6;
+$orchid: #ca3cff;
+$licorice: #1f1014;
+
+$primary:       $orchid;
+$secondary:     $purple;
+$success:       $mint;
+$info:          $blue;
+
+$body-bg:       $licorice;
+$body-color:    $grey;
+
+$font-family-monospace: input-mono, monospace;

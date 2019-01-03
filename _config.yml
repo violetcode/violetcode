@@ -1,0 +1,17 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      true
+
+# Permalinks
+permalink:        pretty
+
+# Server
+source:           source/site
+destination:      .publish
+host:             localhost
+port:             9005
+baseurl:          /
+encoding:         UTF-8
+
+gems:
+  - jekyll-sitemap

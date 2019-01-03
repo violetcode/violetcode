@@ -1,0 +1,55 @@
+{
+  "name": "UnderTasker",
+  "slug": "undertasker",
+  "version": "0.5.0",
+  "description": "Helping you bootstrap your web site/app using a Gulp, Jekyll & Node.js stack",
+  "main": "gulpfile.js",
+  "scripts": {
+    "prestart": "yarn install",
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "shipit": "gulp github",
+    "start": "bundle exec jekyll serve --w"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.1.0",
+    "bootstrap": "^4.1.1",
+    "browser-sync": "^2.24.5",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-coffee": "^3.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-deploy-git": "^0.5.3",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.3.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify-es": "^1.0.4",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^5.0.0",
+    "http-server": "^0.11.1",
+    "jquery": "^3.3.1",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1",
+    "natives": "1.1.6",
+    "popper.js": "^1.12.9",
+    "run-sequence": "^2.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/underlost/UnderTasker.git",
+    "ssh": "git@github.com:underlost/UnderTasker.git"
+  },
+  "author": "Tyler Rilling (https://tyler.codes/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/underlost/UnderTasker/issues"
+  },
+  "homepage": "http://UnderTasker.tyler.codes"
+}

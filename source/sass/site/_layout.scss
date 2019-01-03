@@ -1,0 +1,198 @@
+.bg-wrapper {
+  font-family: $font-family-monospace;
+  background: darken($licorice, 5%);
+  background: radial-gradient(circle, lighten($licorice, 5%) 0%, $licorice 100%);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+a {
+  transition: 0.3s ease all;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.blue {
+  color: darken($blue, 10%);
+  &:hover {
+    color: darken($blue, 20%);
+  }
+}
+
+.mint {
+  color: darken($mint, 10%);
+  &:hover {
+    color: darken($mint, 20%);
+  }
+}
+
+.purple {
+  color: darken($purple, 10%);
+  &:hover {
+    color: darken($purple, 20%);
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: $font-family-monospace;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  color: $purple;
+  .accent {
+    color: $orchid;
+  }
+}
+
+.rings-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 500px;
+  height: 500px;
+  box-sizing: border-box;
+
+  .ring {
+    position: absolute;
+    border: 2px solid $slate-grey;
+    border-radius: 50%;
+    box-shadow: 0 0 10px $slate-grey;
+    .dot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 50%;
+      height: 2px;
+      transform-origin: left;
+      transform: rotate(-45deg);
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #FFF;
+        top: -4px;
+        right: -6px;
+      }
+    }
+  }
+
+  .ring1 {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: spin 5s linear infinite;
+
+    border-top: 2px solid $orchid;
+    .dot::before {
+      background: $orchid;
+      box-shadow: 0 0 20px $orchid,
+              0 0 40px $orchid,
+              0 0 60px $orchid,
+              0 0 80px $orchid,
+              0 0 100px $orchid,
+              0 0 0 5px rgba(204, 220, 221, 0.1);
+    }
+  }
+
+  .ring2 {
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-top: 2px solid $blue;
+    animation: spin 5.2s linear infinite;
+    .dot::before {
+      background: $blue;
+      box-shadow: 0 0 20px $blue,
+              0 0 40px $blue,
+              0 0 60px $blue,
+              0 0 80px $blue,
+              0 0 100px $blue,
+              0 0 0 5px rgba(204, 220, 221, 0.1);
+    }
+  }
+
+  .ring3 {
+    top: 45px;
+    left: 45px;
+    right: 45px;
+    bottom: 45px;
+    border-top: 2px solid $mint;
+    animation: spin 5.4s linear infinite;
+    .dot::before {
+      background: $mint;
+      box-shadow: 0 0 20px $mint,
+              0 0 40px $mint,
+              0 0 60px $mint,
+              0 0 80px $mint,
+              0 0 100px $mint,
+              0 0 0 5px rgba(204, 220, 221, 0.1);
+    }
+  }
+
+  .ring4 {
+    top: 83px;
+    left: 83px;
+    right: 83px;
+    bottom: 83px;
+    border-top: 2px solid $purple;
+    animation: spin 5.6s linear infinite;
+    .dot::before {
+      background: $purple;
+      box-shadow: 0 0 20px $purple,
+              0 0 40px $purple,
+              0 0 60px $purple,
+              0 0 80px $purple,
+              0 0 100px $purple,
+              0 0 0 5px rgba(204, 220, 221, 0.1);
+    }
+  }
+
+  .box {
+    position: absolute;
+    border: 1px solid #5a5a5a;
+    box-shadow: 0 0 5px #5a5a5a;
+  }
+
+  .box1 {
+    top: 45px;
+    right: 45px;
+    bottom: 45px;
+    left: 45px;
+    animation: spin 25s linear infinite;
+  }
+
+  .box2 {
+    top: 83px;
+    right: 83px;
+    bottom: 83px;
+    left: 83px;
+    transform: rotate(30deg);
+    animation: spin 15s linear infinite;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  .overlay-box {
+    padding: 30px;
+    background-color: rgba(31, 16, 20, 0.8);
+  }
+}
